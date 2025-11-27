@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warung Mie Kekinian</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* HEADER */
+    .header {
+      background: linear-gradient(135deg, #b71c1c, #ff5252);
+      padding: 0%;
+      text-align: center;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo img {
+      width: 120px;
+    }
+
+    .menu ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      flex-wrap: wrap;
+    }
+
+    .menu ul li {
+      margin: 15px;
+    }
+
+    .menu ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: all 0.3s;
+      font-weight: 500;
+    }
+
+    .menu ul li a:hover {
+      background: white;
+      color: #b71c1c;
+    }
+    
+    /* HOME */
+    .home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 50vh;
+      background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(181, 70, 70, 0.7)),
+                  url("image/ramen-bg.jpg") center/cover no-repeat;
+      color: white;
+      padding: 50px;
+    }
+
+    .home-content h1 {
+      font-size: 52px;
+      margin-bottom: 25px;
+    }
+
+    .home-content h1 span {
+      color: #ffeb3b;
+    }
+
+    .home-content p {
+      font-size: 18px;
+      margin-bottom: 35px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn-order {
+      display: inline-block;
+      padding: 12px 30px;
+      background: white;
+      color: #b71c1c;
+      border-radius: 80px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn-order:hover {
+      background: #ffeb3b;
+      color: #b71c1c;
+    }
+
+    /* CONTENT */
+    .content {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .content h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 25px;
+      color: #b71c1c;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 65px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 50px;
+      box-shadow: 0 50px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-30px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 25px 0 5px;
+      color: #444;
+    }
+
+    .card p {
+      margin: 0 0 15px;
+      color: #666;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #b71c1c;
+      margin-bottom: 15px;
+    }
+
+    /* CONTACT */
+    #contact {
+      background: #fff3e0;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    #contact h2 {
+      margin-bottom: 25px;
+      color: #e65100;
+    }
+
+    #contact p {
+      margin: 25px 0;
+      font-size: 16px;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #b71c1c;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    footer marquee {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">
+      <img src="image/ChatGPT Image 25 Sep 2025, 00.09.31.png" alt="Warung Mie">
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#makanan">Makanan</a></li>
+        <li><a href="#minuman">Minuman</a></li>
+        <li><a href="#order">Order 🍽️</a></li>
+        <li><a href="#contact">Contact 📞</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- HOME -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <h1>🍜 Selamat Datang di <span>Warung Mie Kekinian</span></h1>
+      <p>Rasakan kelezatan mie ramen ala Korea dengan cita rasa khas yang bikin nagih.
+         Fresh, Halal, dan selalu hangat untukmu.</p>
+      <a href="#makanan" class="btn-order">🍽️ Pesan Sekarang</a>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <div class="content" id="makanan" >
+    <h2>🍜 Menu Seruputan Kebahagiaan</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="image/🍜🌶️ Spicy Miso Ramen – Comfort in a Bowl! 🌶️🍜….jpg" alt="Ramen Spicy">
+        <h3>Ramen Spicy</h3>
+        <p>Ramen pedas dengan kuah gurih dan topping </p>
+        <div class="price">Rp 35.000</div>
+      </div>
+      <div class="card">
+        <img src="image/57c1fd04-bb05-4bc9-b024-d4e3864fcb3d.jpg" alt="Ramen Miso">
+        <h3>Ramen Miso</h3>
+        <p>Kuah miso hangat dengan telur setengah matang</p>
+        <div class="price">Rp 32.000</div>
+      </div>
+      <div class="card">
+        <img src="image/3713d10d-c7d6-4216-b569-574a7f8abd64.jpg" alt="Ramen Ayam">
+        <h3>Chicken Ramen</h3>
+        <p>Ramen dengan ayam panggang dan sayuran segar</p>
+        <div class="price">Rp 38.000</div>
+      </div>
+      <div class="card">
+        <img src="image/8920d91e-2f71-4240-b4fe-f0bc27b92a16.jpg" alt="Seafood Ramen">
+        <h3>Ramen slice ayam jamur</h3>
+        <p>Ramen isi jamur, ayam slice gurih</p>
+        <div class="price">Rp 45.000</div>
+      </div>
+      <div class="card">
+        <img src="image/名店揃い！見た目はこってり味はマイルドな京都を代表する中華そば4選｜ウォーカープラス.jpg" alt="Ramen Ayam">
+        <h3>Big chicken ramen</h3>
+        <p>Ramen ayam dada kuah kari</p>
+        <div class="price">Rp 33.000</div>
+      </div>
+      <div class="card">
+        <img src="image/東京ラーメンストリート特設 _ 東京駅一番街.jpg" alt="Ramen Ayam">
+        <h3>Smook Ramen</h3>
+        <p>Smook ramen telur semur</p>
+        <div class="price">Rp 31.000</div>
+      </div>
+      <div class="card">
+        <img src="image/7037dfd7-047f-4352-901c-f0b8097673ce.jpg" alt="Ramen Ayam">
+        <h3>Ramen Biasa</h3>
+        <p>Ramen kuah desa dengan double telur</p>
+        <div class="price">Rp 37.000</div>
+      </div><div class="card">
+        <img src="image/delicious and good looking ramen in Japan.jpg" alt="Ramen Ayam">
+        <h3>Ramen japan</h3>
+        <p>Ramen dengan nori, ayam slice, vegetarian</p>
+        <div class="price">Rp 41.000</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MINUMAN -->
+  <div class="content" id="minuman">
+    <h2>🥤 Kesegaran yang HAKIKI</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="image/ca4b2636-1eeb-45f9-b368-dc605aacaaa1.jpg" alt="Ice Tea">
+        <h3>Lemone Tea</h3>
+        <p>Kesegaran lemon dicampur teh pilihan</p>
+        <div class="price">Rp 10.000</div>
+      </div>
+      <div class="card">
+        <img src="image/a98d40fe-7da7-4efb-8d56-85dec7df5b06.jpg" alt="Ice Lemon">
+        <h3>Es Jeruk</h3>
+        <p>Kesegaran Jeruk peras yang bikin melek</p>
+        <div class="price">Rp 10.000</div>
+      </div>
+      <div class="card">
+        <img src="image/ca009096-ab17-4797-9022-d81550721eb7.jpg" alt="Es Teh Tarik"">
+        <h3>Es Teh Tarik</h3>
+        <p>Susu & Teh yang ditarik</p>
+        <div class="price">Rp 15.000</div>
+      </div>
+      <div class="card">
+        <img src="image/A glass of iced tea with ice cubes.jpg" alt="Boba Brown Sugar">
+        <h3>Es Teh Manis</h3>
+        <p>Kesegaran Minuman warga Konoha</p>
+        <div class="price">Rp 8.000</div>
+      </div>
+      <div class="card">
+        <img src="image/cà phê sữa - ảnh cà phê sữa tách nền milk coffee….jpg" alt="Creamy Kopi">
+        <h3>Creamy Kopi</h3>
+        <p>Kopi dan susu yang creamy </p>
+        <div class="price">Rp 25.000</div>
+      </div>
+      <div class="card">
+        <img src="image/e1edffc2-6b8d-46ed-9d68-d2d458c48118.jpg"Matcha Latte">
+        <h3>Milk Chocolatte</h3>
+        <p>Es susu coklat</p>
+        <div class="price">Rp 20.000</div>
+      </div>
+      <div class="card">
+        <img src="image/efab8005-120d-4c68-9cab-853dad38194b.jpg"Matcha Latte">
+        <h3>Red Velvet</h3>
+        <p>Minunman Gen z</p>
+        <div class="price">Rp 23.000</div>
+      </div>
+      <div class="card">
+        <img src="image/Menu _ Perfect Poke Bowls _ Poke Burritos… - Copy.jpg"Matcha Latte">
+        <h3>Mojito Strawberry</h3>
+        <p>sprit dan bubuk strawberry sedikit daun mint</p>
+        <div class="price">Rp 25.000</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+   <section id="contact">
+    <h2>📩 Terima Pesanan</h2>
+    <p>📞 WhatsApp: +62-813-2945-1860</p>
+    <p>📷 Instagram: <a href="https://instagram.com/koreanfood" target="_blank">@KoreanFood</a></p>
+  </section>
+  <div class="footer">
+    <p><marquee>Nikmati Makanan kami Dengan penuh kenikmatan & kebahagiaan</marquee></p>
+  </div>
+
+</body>
+</html>
